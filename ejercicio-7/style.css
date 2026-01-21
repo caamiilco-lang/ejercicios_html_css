@@ -1,0 +1,108 @@
+:root{
+  --color-primario: #4CAF50;
+  --color-fondo: #f9f9f9;
+  --color-texto: #333;
+  --radio: 12px;
+  --sombra: 0 4px 12px rgba(0,0,0,0.08);
+  --sombra-hover: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+
+*{
+  margin: 0; /*para hacer que nada de la pagina tenga márgenes */
+  padding: 0; /* para que nada de la página tenga padding*/
+  box-sizing: border-box; /* Para que el border no afecte el tamaño de los elementos */
+  
+}
+
+body {
+  font-family: 'Poppins', sans-serif;  /* fuente de google*/
+  line-height: 1.7; /* Espaciado entre líneas */
+  color: var(--color-texto);  /* Color de texto */
+  background-color: var(--color-fondo); /*Color de fondo */
+}
+
+.contenedor {
+  width: 90%; /* Ancho del contenedor */
+  max-width: 900px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 0 20px; /* Padding horizontal */
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--color-primario), #81C784); /* Degradado de color */
+  color: white; /* Color de texto blanco */
+  text-align: center; /* Centrar texto */
+  padding: 60px 20px; /* Padding vertical y horizontal */
+}
+
+
+
+.hero h1 {
+  font-size: 2.2rem; /* Tamaño de fuente */
+  font-weight: 700; /* Grosor de fuente */
+  margin-bottom: 12px; /* Margen inferior */
+}
+
+.hero p {
+  font-size: 1.1rem; /* Tamaño de fuente */
+  opacity: 0.9; /* Opacidad para un efecto más suave */
+}
+
+.seccion {
+  padding: 60px 0; /* Padding vertical */
+}
+
+.seccion h2 {
+  text-align: center; /* Centrar texto */
+  font-size: 2rem; /* Tamaño de fuente */
+  color: var(--color-primario);/* Color primario */
+  margin-bottom: 40px; /* Margen inferior */
+}
+
+.posiciones{
+  display: grid; /* Usar grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+  gap: 30px; /* Espacio entre los elementos */
+  margin-top: 30px; /* Margen superior */
+}
+
+.posicion {
+  background: white; /* Fondo blanco */
+  border-radius: var(--radio); /* Bordes redondeados */
+  padding: 30px; /* Padding interno */
+  text-align: center; /* Centrar texto */
+  box-shadow: var(--sombra); /* Sombra */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.posicion:hover {
+  transform: translateY(-8px); /* Efecto de elevación */
+  box-shadow: var(--sombra-hover);/* Sombra más intensa */
+}
+
+.posicion span {
+  font-size: 2.5rem; /* Tamaño de fuente grande */
+  margin-bottom: 16px; /* Margen inferior */
+  display: block; /* Mostrar como bloque */
+}
+
+.posicion h3 {
+  font-size: 1.4rem; /* Tamaño de fuente */
+  color: var(--color-primario); /* Color primario */
+  margin-bottom: 12px;  /* Margen inferior */
+}
+
+.posicion p {
+  color: #555; /* Color de texto secundario */
+  font-size: 0.95rem;   /* Tamaño de fuente */
+}
+
+
+footer {
+  background: #333;   /* Fondo oscuro */
+  color: white;   /* Texto blanco */
+  text-align: center;   /* Centrar texto */
+  padding: 20px 0;  /* Padding vertical */
+  margin-top: 50px;   /* Margen superior */
+}

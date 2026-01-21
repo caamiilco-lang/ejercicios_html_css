@@ -1,0 +1,141 @@
+:root {
+  --color-primario: #4CAF50;     
+  --color-secundario: #81C784;    
+  --color-fondo: #f9f9f9;
+  --color-texto: #333;
+  --color-blanco: #fff;
+  --sombra: 0 4px 12px rgba(0,0,0,0.08);
+  --radio: 12px;
+}
+
+* {
+  margin: 0; /*para que no tenga margenes por defecto*/
+  padding: 0; /*para que no tenga espaciado interno*/
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.seccion {
+  padding: 50px 0;
+}
+
+.seccion h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--color-primario);
+}
+
+.fondo-secundario {
+  background-color: #f0f7f1;
+}
+
+.tarjetas-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.tarjeta {
+  background: var(--color-blanco);
+  border-radius: var(--radio);
+  padding: 28px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: var(--sombra);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px);
+}
+
+.tarjeta h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--color-primario);
+}
+
+.tarjeta p {
+  margin-bottom: 16px;
+  
+}
+
+.precio {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--color-primario);
+}
+
+.botones-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--color-primario);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #388E3C;
+}
+
+.btn-secundario {
+  background: transparent;
+  border: 2px solid var(--color-primario);
+  color: var(--color-primario);
+}
+
+.btn-secundario:hover {
+  background: #f0f7f1;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}

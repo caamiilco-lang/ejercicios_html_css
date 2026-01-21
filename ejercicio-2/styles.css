@@ -1,0 +1,71 @@
+body {
+  display: flex; /* Activa Flexbox para centrar el menú */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  margin: 0; /* Elimina márgenes predeterminados */
+  background-color: #f5f5f5; /* Fondo gris claro para contraste */
+  font-family: 'Roboto', sans-serif; /* Fuente personalizada de Google Fonts */
+}
+
+.card {
+  max-width: 800px; /* Ancho máximo */
+  padding: 20px; /* Espacio interno */
+  background: #ffff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.menu-list {
+  display: flex; /* activar la cuadricula de flex dentro de la lista */
+  flex-wrap: wrap; /* agrupamiento de elmentos en pantallas pequeñas */
+  gap: 20px; /* Espacio entre ítems */
+  list-style: none; /* Quita viñetas de la lista */
+  padding: 0; /* Elimina padding predeterminado */
+}
+
+.menu-item {
+  flex: 1 1 calc(50% - 20px); /* dividir en dos */
+  background: #fff8e1; /* Fondo beige cálido para estilo gourmet */
+  padding: 15px; /* Espacio interno en cada ítem */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 1px solid #ddd; /* Borde suave */
+  display: flex; /* Flexbox interno para alinear contenido */
+  flex-direction: column; /* Elementos en columna */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Texto centrado */
+  transition: transform 0.3s, box-shadow 0.3s; /* para las animaciones */
+}
+
+.menu-item:hover {
+  transform: scale(1.05); /* Agranda ligeramente al hover */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Sombra más profunda al hover */
+}
+
+.icon {
+  font-size: 2.5em; /* Tamaño más grande para emojis gourmet */
+  margin-bottom: 10px; /* Espacio abajo del ícono */
+}
+
+.price {
+  font-weight: bold; /* Negrita para el precio */
+  color: #8b4513; /* Color marrón oscuro temático */
+  margin-top: 10px; /* Espacio arriba del precio */
+}
+
+h1 {
+  text-align: center; /* Centra el título principal */
+  color: #8b4513; /* Color marrón*/
+}
+
+h3 {
+  margin: 5px 0; /* Espacio alrededor del nombre del plato */
+  color: #8b4513; /* Color marrón */
+}
+
+/* Media query para responsividad en pantallas pequeñas */
+@media (max-width: 600px) {
+  .menu-item {
+    flex-basis: calc(100% - 20px); /* 1 ítem por fila en móviles */
+  }
+}

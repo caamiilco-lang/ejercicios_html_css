@@ -1,0 +1,28 @@
+.tarjeta{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    text-align: center;
+     
+
+}
+
+.descripcion{
+    font-family: poppins,sans-serif;
+}
+
+.precio{
+     font-family: poppins,sans-serif;
+
+}
+
+
+.tarjeta:hover{
+  background-color: yellow;
+ }
+ 
+
+
+
+
+

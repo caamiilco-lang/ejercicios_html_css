@@ -1,0 +1,38 @@
+body {
+      display: flex; /* Activa Flexbox para centrar la lista */
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center; /* Centra verticalmente */
+      height: 100vh; /* Ocupa toda la altura de la pantalla */
+      margin: 0; /* Elimina márgenes predeterminados */
+      background-color: #f0f0f0; /* Fondo gris claro para contraste */
+      font-family: 'Roboto', sans-serif; /* Fuente personalizada de Google Fonts */
+    }
+
+.task-container{
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tasks-list{
+    list-style: none; /*esto es para que no aparezcan los puntos de la lista */
+    padding: 0; /* quita el padding */
+    margin: 0;  /* quita el margen */  
+}
+
+.task-checkbox{
+    width: 20px; 
+    height: 20px;
+    cursor: pointer;
+}
+
+.task-item:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+      text-align: center; /* Centra el título principal */
+      margin-bottom: 20px; /* Espacio abajo */
+    }
